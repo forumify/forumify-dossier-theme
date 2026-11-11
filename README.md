@@ -109,7 +109,7 @@ how. Each variable becomes a CSS custom property:
 ## Stylesheets and other static files
 
 Everything in `public/` is linked into the forumify instance at
-`public/themes/forumify/dossier-theme/` when the theme is installed or refreshed.
+`public/themes/forumify/forumify-dossier-theme/` when the theme is installed or refreshed.
 Stylesheets listed in `getStylesheets()` are loaded on every page, anything else
 (images, fonts) can be referenced relative to them.
 
@@ -149,8 +149,8 @@ changes are live without publishing anything:
 
 ```bash
 cd /path/to/your/forumify-instance
-composer config repositories.dossier path /path/to/dossier
-composer require forumify/dossier-theme:@dev
+composer config repositories.forumify-dossier-theme path /path/to/forumify-dossier-theme
+composer require forumify/forumify-dossier-theme:@dev
 ```
 
 The theme then shows up under **Admin → Settings → Themes**, where you can activate it.
@@ -172,7 +172,7 @@ make quality-fix    # fix what phpcs can fix automatically
 1. Push the repository to GitHub.
 2. Submit it to [Packagist](https://packagist.org/packages/submit).
 3. Tag a release. Users install it with
-   `composer require forumify/dossier-theme`.
+   `composer require forumify/forumify-dossier-theme`.
 
 ## Documentation
 
